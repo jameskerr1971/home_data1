@@ -2,7 +2,7 @@
 
 Curl_Writer.py
 Runs a curl test to the listed hosts
-Stores the resutls in MongoDB
+Stores the results in MongoDB
 
 Scraper_Dennett.py
 Retrieves host information
