@@ -11,7 +11,7 @@ while time.time() < t_end:
         endpoint='http://192.168.0.12:5985/wsman',
         transport='ntlm',
         username='popper\popperuser',
-        password='alahr0hh',
+        password='0bserver',
         server_cert_validation='ignore')
     shell_id = p.open_shell()
     command_id = p.run_command(shell_id, 'wmic', ["cpu get loadpercentage"])

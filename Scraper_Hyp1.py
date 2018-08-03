@@ -2,17 +2,12 @@ import paramiko
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('192.168.0.53', username='hyp1', password='alahr0hh')
+ssh.connect('192.168.0.53', username='hyp1', password='0bserver')
 
 stdin, stdout, stderr = ssh.exec_command("uptime")
 uptime = stdout.readlines()
 #print('uptime: ', uptime, type(uptime))
 str_uptime = str(uptime)
-
-#stdin, stdout, stderr = ssh.exec_command("top -b -n 1")
-#top = stdout.readlines()
-#print('top: ', top, type(top))
-#str_top = str(top)
 
 stdin, stdout, stderr = ssh.exec_command("free")
 free = stdout.readlines()
